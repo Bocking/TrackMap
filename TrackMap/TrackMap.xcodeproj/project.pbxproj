@@ -20,7 +20,6 @@
 		1399CC8819C12910006539F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1399CC6A19C12910006539F7 /* UIKit.framework */; };
 		1399CC9019C12910006539F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1399CC8E19C12910006539F7 /* InfoPlist.strings */; };
 		1399CC9219C12910006539F7 /* TrackMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CC9119C12910006539F7 /* TrackMapTests.m */; };
-		1399CCA119C12DE3006539F7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCA019C12DE3006539F7 /* SWRevealViewController.m */; };
 		1399CCA419C12ECE006539F7 /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCA319C12ECE006539F7 /* firstViewController.m */; };
 		1399CCA719C12FA8006539F7 /* firstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCA619C12FA8006539F7 /* firstViewModel.m */; };
 		1399CCAA19C12FF9006539F7 /* NightcapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCA919C12FF9006539F7 /* NightcapViewController.m */; };
@@ -28,6 +27,8 @@
 		1399CCB119C130C1006539F7 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCB019C130C1006539F7 /* InformationViewController.m */; };
 		1399CCB519C1316D006539F7 /* legendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCB419C1316D006539F7 /* legendViewController.m */; };
 		1399CCB919C13284006539F7 /* mapMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCB819C13284006539F7 /* mapMenuViewController.m */; };
+		1399CCBD19C1457B006539F7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCBC19C1457B006539F7 /* SWRevealViewController.m */; };
+		1399CCC019C14C42006539F7 /* mapMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCBF19C14C42006539F7 /* mapMenuModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,6 @@
 		1399CC8D19C12910006539F7 /* TrackMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrackMapTests-Info.plist"; sourceTree = "<group>"; };
 		1399CC8F19C12910006539F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1399CC9119C12910006539F7 /* TrackMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackMapTests.m; sourceTree = "<group>"; };
-		1399CC9F19C12DE3006539F7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Reveal/SWRevealViewController.h; sourceTree = "<group>"; };
-		1399CCA019C12DE3006539F7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Reveal/SWRevealViewController.m; sourceTree = "<group>"; };
 		1399CCA219C12ECE006539F7 /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstViewController.h; path = FirstView/firstViewController.h; sourceTree = "<group>"; };
 		1399CCA319C12ECE006539F7 /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = FirstView/firstViewController.m; sourceTree = "<group>"; };
 		1399CCA519C12FA8006539F7 /* firstViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstViewModel.h; path = FirstView/firstViewModel.h; sourceTree = "<group>"; };
@@ -74,6 +73,10 @@
 		1399CCB419C1316D006539F7 /* legendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = legendViewController.m; path = legend/legendViewController.m; sourceTree = "<group>"; };
 		1399CCB719C13284006539F7 /* mapMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapMenuViewController.h; path = MapMenu/mapMenuViewController.h; sourceTree = "<group>"; };
 		1399CCB819C13284006539F7 /* mapMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapMenuViewController.m; path = MapMenu/mapMenuViewController.m; sourceTree = "<group>"; };
+		1399CCBB19C1457B006539F7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = reveal/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
+		1399CCBC19C1457B006539F7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = reveal/SWRevealViewController.m; sourceTree = SOURCE_ROOT; };
+		1399CCBE19C14C42006539F7 /* mapMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapMenuModel.h; path = MapMenu/mapMenuModel.h; sourceTree = "<group>"; };
+		1399CCBF19C14C42006539F7 /* mapMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapMenuModel.m; path = MapMenu/mapMenuModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +139,10 @@
 				1399CC7519C12910006539F7 /* AppDelegate.h */,
 				1399CC7619C12910006539F7 /* AppDelegate.m */,
 				1399CC7819C12910006539F7 /* Main.storyboard */,
+				1399CCBA19C1359F006539F7 /* Maps */,
 				1399CC9B19C12C08006539F7 /* Reveal */,
 				1399CCB619C13252006539F7 /* Mapmenu */,
 				1399CC9D19C12C8D006539F7 /* FirstView */,
-				1399CC9C19C12C33006539F7 /* Nightcapmap */,
 				1399CCAB19C13060006539F7 /* Partners */,
 				1399CCB219C13148006539F7 /* Legend */,
 				1399CC9E19C12CCC006539F7 /* Information */,
@@ -181,8 +184,8 @@
 		1399CC9B19C12C08006539F7 /* Reveal */ = {
 			isa = PBXGroup;
 			children = (
-				1399CC9F19C12DE3006539F7 /* SWRevealViewController.h */,
-				1399CCA019C12DE3006539F7 /* SWRevealViewController.m */,
+				1399CCBB19C1457B006539F7 /* SWRevealViewController.h */,
+				1399CCBC19C1457B006539F7 /* SWRevealViewController.m */,
 			);
 			name = Reveal;
 			sourceTree = "<group>";
@@ -237,10 +240,20 @@
 		1399CCB619C13252006539F7 /* Mapmenu */ = {
 			isa = PBXGroup;
 			children = (
+				1399CCBE19C14C42006539F7 /* mapMenuModel.h */,
+				1399CCBF19C14C42006539F7 /* mapMenuModel.m */,
 				1399CCB719C13284006539F7 /* mapMenuViewController.h */,
 				1399CCB819C13284006539F7 /* mapMenuViewController.m */,
 			);
 			name = Mapmenu;
+			sourceTree = "<group>";
+		};
+		1399CCBA19C1359F006539F7 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				1399CC9C19C12C33006539F7 /* Nightcapmap */,
+			);
+			name = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,10 +359,11 @@
 				1399CC7719C12910006539F7 /* AppDelegate.m in Sources */,
 				1399CC7319C12910006539F7 /* main.m in Sources */,
 				1399CCB119C130C1006539F7 /* InformationViewController.m in Sources */,
-				1399CCA119C12DE3006539F7 /* SWRevealViewController.m in Sources */,
 				1399CCA419C12ECE006539F7 /* firstViewController.m in Sources */,
+				1399CCBD19C1457B006539F7 /* SWRevealViewController.m in Sources */,
 				1399CCAE19C1308F006539F7 /* partnersViewController.m in Sources */,
 				1399CCA719C12FA8006539F7 /* firstViewModel.m in Sources */,
+				1399CCC019C14C42006539F7 /* mapMenuModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +568,7 @@
 				1399CC9719C12910006539F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1399CC9819C12910006539F7 /* Build configuration list for PBXNativeTarget "TrackMapTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +577,7 @@
 				1399CC9A19C12910006539F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
