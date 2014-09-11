@@ -148,6 +148,7 @@
 				1399CC7519C12910006539F7 /* AppDelegate.h */,
 				1399CC7619C12910006539F7 /* AppDelegate.m */,
 				1399CC7819C12910006539F7 /* Main.storyboard */,
+				1399CC7E19C12910006539F7 /* Images.xcassets */,
 				1399CCBA19C1359F006539F7 /* Maps */,
 				1399CC9B19C12C08006539F7 /* Reveal */,
 				1399CCB619C13252006539F7 /* Mapmenu */,
@@ -156,7 +157,6 @@
 				1399CCB219C13148006539F7 /* Legend */,
 				1399CC9E19C12CCC006539F7 /* Information */,
 				1399CC6D19C12910006539F7 /* Supporting Files */,
-				1399CC7E19C12910006539F7 /* Images.xcassets */,
 			);
 			path = TrackMap;
 			sourceTree = "<group>";
