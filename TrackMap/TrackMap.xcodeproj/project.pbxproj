@@ -30,6 +30,7 @@
 		1399CCBD19C1457B006539F7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCBC19C1457B006539F7 /* SWRevealViewController.m */; };
 		1399CCC019C14C42006539F7 /* mapMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCBF19C14C42006539F7 /* mapMenuModel.m */; };
 		1399CCC319C14D47006539F7 /* mapMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCC219C14D47006539F7 /* mapMenuItem.m */; };
+		1399CCC719C16706006539F7 /* GoonengerryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCC619C16706006539F7 /* GoonengerryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		1399CCBF19C14C42006539F7 /* mapMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapMenuModel.m; path = MapMenu/mapMenuModel.m; sourceTree = "<group>"; };
 		1399CCC119C14D47006539F7 /* mapMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapMenuItem.h; path = MapMenu/mapMenuItem.h; sourceTree = "<group>"; };
 		1399CCC219C14D47006539F7 /* mapMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapMenuItem.m; path = MapMenu/mapMenuItem.m; sourceTree = "<group>"; };
+		1399CCC519C16706006539F7 /* GoonengerryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoonengerryViewController.h; path = Goonengerry/GoonengerryViewController.h; sourceTree = "<group>"; };
+		1399CCC619C16706006539F7 /* GoonengerryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoonengerryViewController.m; path = Goonengerry/GoonengerryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,9 +259,19 @@
 		1399CCBA19C1359F006539F7 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				1399CCC419C1666D006539F7 /* Goonengerry National Park Map */,
 				1399CC9C19C12C33006539F7 /* Nightcapmap */,
 			);
 			name = Maps;
+			sourceTree = "<group>";
+		};
+		1399CCC419C1666D006539F7 /* Goonengerry National Park Map */ = {
+			isa = PBXGroup;
+			children = (
+				1399CCC519C16706006539F7 /* GoonengerryViewController.h */,
+				1399CCC619C16706006539F7 /* GoonengerryViewController.m */,
+			);
+			name = "Goonengerry National Park Map";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +383,7 @@
 				1399CCAE19C1308F006539F7 /* partnersViewController.m in Sources */,
 				1399CCA719C12FA8006539F7 /* firstViewModel.m in Sources */,
 				1399CCC019C14C42006539F7 /* mapMenuModel.m in Sources */,
+				1399CCC719C16706006539F7 /* GoonengerryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

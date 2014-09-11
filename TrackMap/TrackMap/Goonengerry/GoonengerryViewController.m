@@ -1,19 +1,20 @@
 //
-//  NightcapViewController.m
+//  GoonengerryViewController.m
 //  TrackMap
 //
 //  Created by Douglas Bocking on 11/09/2014.
 //  Copyright (c) 2014 DouglasBocking. All rights reserved.
 //
 
-#import "NightcapViewController.h"
+#import "GoonengerryViewController.h"
 #import "SWRevealViewController.h"
 
-@interface NightcapViewController ()
+
+@interface GoonengerryViewController ()
 
 @end
 
-@implementation NightcapViewController
+@implementation GoonengerryViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

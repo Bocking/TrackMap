@@ -94,6 +94,8 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="emx-vv-NgO" id="xeN-Dj-hjg"/>
+                        <segue destination="huc-8n-xM3" kind="custom" identifier="GoToNightcapMapSegue" customClass="SWRevealViewControllerSegue" id="09l-3g-kwC"/>
+                        <segue destination="3b2-MP-WUx" kind="custom" identifier="GoToGoonengerrySegue" customClass="SWRevealViewControllerSegue" id="xwX-fr-Ar5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZl-vH-P2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -111,12 +113,44 @@
                     <view key="view" contentMode="scaleToFill" id="bxY-jW-ucC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MzC-5S-G4w">
+                                <rect key="frame" x="0.0" y="29" width="264" height="193"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.41799093040000002" green="1" blue="0.40809219400000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y22-en-AiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1511" y="-1395"/>
+            <point key="canvasLocation" x="-1543" y="-843"/>
+        </scene>
+        <!--Goonengerry View Controller-->
+        <scene sceneID="aSs-HP-Qiy">
+            <objects>
+                <viewController id="3b2-MP-WUx" customClass="GoonengerryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LkH-rN-PdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xv8-Y5-7bq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L3n-fZ-s6n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0O-tO-3yW">
+                                <rect key="frame" x="0.0" y="25" width="248" height="181"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHz-Ap-mlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-989" y="-1003"/>
         </scene>
         <!--Information View Controller-->
         <scene sceneID="Wec-PR-QPe">
@@ -134,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJW-Qs-L73" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-859" y="-2079"/>
+            <point key="canvasLocation" x="-1055" y="-2079"/>
         </scene>
         <!--Partners View Controller-->
         <scene sceneID="qAk-Xb-Qyv">
@@ -152,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LK3-IE-83T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="-1395"/>
+            <point key="canvasLocation" x="-645" y="-2079"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
