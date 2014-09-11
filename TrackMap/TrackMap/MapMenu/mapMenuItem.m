@@ -1,15 +1,13 @@
 //
-//  mapMenuModel.h
+//  mapMenuItem.m
 //  TrackMap
 //
 //  Created by Douglas Bocking on 11/09/2014.
 //  Copyright (c) 2014 DouglasBocking. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "mapMenuItem.h"
 
-@interface mapMenuModel : NSObject
-
-- (NSArray *)getMenuItems;
+@implementation mapMenuItem
 
 @end

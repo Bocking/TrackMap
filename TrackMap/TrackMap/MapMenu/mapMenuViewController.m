@@ -27,6 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // set self as the data source and delegate for the table view
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    //Fetch the menu items
+    self.menuItems = [[[mapMenuModel alloc] init] getMenuItems];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +43,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark Table View Delegate Methods
+
+
+
+
 
 @end

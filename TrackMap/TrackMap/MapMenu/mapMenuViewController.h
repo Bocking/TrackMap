@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "mapMenuModel.h"
+#import "mapMenuItem.h"
 
-@interface mapMenuViewController : UIViewController
+
+@interface mapMenuViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) mapMenuModel *model;
+@property (strong, nonatomic) NSArray *menuItems;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

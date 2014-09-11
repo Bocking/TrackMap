@@ -1,5 +1,5 @@
 //
-//  mapMenuModel.h
+//  mapMenuItem.h
 //  TrackMap
 //
 //  Created by Douglas Bocking on 11/09/2014.
@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface mapMenuModel : NSObject
+@interface mapMenuItem : NSObject
 
-- (NSArray *)getMenuItems;
+@property (strong, nonatomic) NSString *menuTitle;
+@property (strong, nonatomic) NSString *menuIcon;
+
 
 @end

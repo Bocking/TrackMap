@@ -92,6 +92,9 @@
                             </tableView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="emx-vv-NgO" id="xeN-Dj-hjg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZl-vH-P2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
