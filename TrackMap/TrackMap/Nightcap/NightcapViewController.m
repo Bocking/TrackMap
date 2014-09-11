@@ -30,6 +30,26 @@
     // Do any additional setup after loading the view.
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    
+#pragma mark add web map
+    // this adds webmap
+    self.webmap = [[AGSWebMap alloc] initWithItemId:@"723060582241474981f0a77a143f1cbe" credential:nil];
+    self.webmap.delegate = self;
+    
+#pragma mark client ID
+    // Set the client ID
+    NSError *error;
+    NSString* clientID = @"0t1wjgzTOV7zMCGS";
+    
+    [AGSRuntimeEnvironment setClientID:clientID error:&error];
+    if(error)
+    
+    {
+        // We had a problem using our client ID
+        NSLog(@"Error using client ID : %@",[error localizedDescription]);
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,15 +58,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)webMapDidLoad:(AGSWebMap *)webmap
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    //open webmap in mapview
+    [self.webmap openIntoMapView:self.nightcapMapView];
+    
+    //GPS
+    [self.nightcapMapView.locationDisplay startDataSource];
+    
+    _nightcapMapView.locationDisplay.autoPanMode = AGSLocationDisplayAutoPanModeNavigation;
+    
+    /* self.mapView.locationDisplay.autoPanMode = AGSLocationDisplayAutoPanModeCompassNavigation ;
+     
+     self.mapView.locationDisplay.navigationPointHeightFactor  = 0.5; //50% along the center line from the bottom edge to the top edge */
+    
 }
-*/
 
 @end

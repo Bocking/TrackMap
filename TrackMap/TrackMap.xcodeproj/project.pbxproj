@@ -31,6 +31,7 @@
 		1399CCC019C14C42006539F7 /* mapMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCBF19C14C42006539F7 /* mapMenuModel.m */; };
 		1399CCC319C14D47006539F7 /* mapMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCC219C14D47006539F7 /* mapMenuItem.m */; };
 		1399CCC719C16706006539F7 /* GoonengerryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1399CCC619C16706006539F7 /* GoonengerryViewController.m */; };
+		1399CCC919C18EA6006539F7 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1399CCC819C18EA6006539F7 /* ArcGIS.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		1399CCC219C14D47006539F7 /* mapMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mapMenuItem.m; path = MapMenu/mapMenuItem.m; sourceTree = "<group>"; };
 		1399CCC519C16706006539F7 /* GoonengerryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoonengerryViewController.h; path = Goonengerry/GoonengerryViewController.h; sourceTree = "<group>"; };
 		1399CCC619C16706006539F7 /* GoonengerryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoonengerryViewController.m; path = Goonengerry/GoonengerryViewController.m; sourceTree = "<group>"; };
+		1399CCC819C18EA6006539F7 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../../Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		1399CC5A19C12910006539F7 = {
 			isa = PBXGroup;
 			children = (
+				1399CCC819C18EA6006539F7 /* ArcGIS.bundle */,
 				1399CC6C19C12910006539F7 /* TrackMap */,
 				1399CC8B19C12910006539F7 /* TrackMapTests */,
 				1399CC6519C12910006539F7 /* Frameworks */,
@@ -352,6 +355,7 @@
 			files = (
 				1399CC7F19C12910006539F7 /* Images.xcassets in Resources */,
 				1399CC7119C12910006539F7 /* InfoPlist.strings in Resources */,
+				1399CCC919C18EA6006539F7 /* ArcGIS.bundle in Resources */,
 				1399CC7A19C12910006539F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,9 +512,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrackMap/TrackMap-Prefix.pch";
 				INFOPLIST_FILE = "TrackMap/TrackMap-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -521,9 +533,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrackMap/TrackMap-Prefix.pch";
 				INFOPLIST_FILE = "TrackMap/TrackMap-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
