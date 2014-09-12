@@ -72,6 +72,7 @@
     
     // Set menu item text and icon
     menuCell.textLabel.text = item.menuTitle;
+    menuCell.textLabel.textColor = [UIColor whiteColor];
     
     return menuCell;
 }
