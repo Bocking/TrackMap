@@ -14,7 +14,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="M2p-de-vPp"/>
+                        <segue destination="8rD-ct-C23" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="M2p-de-vPp"/>
                         <segue destination="Iip-Nw-ow4" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="h7t-Cm-czS"/>
                     </connections>
                 </viewController>
@@ -33,7 +33,53 @@
                             <view contentMode="scaleToFill" id="CjR-aw-InR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.094117656350135803" green="0.60000002384185791" blue="0.14117647707462311" alpha="1" colorSpace="deviceRGB"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ikw-RM-jZF">
+                                        <rect key="frame" x="120" y="76" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <state key="normal" image="NationalParksButton">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nationalParksButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E5m-Bo-S8b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sKd-xo-d82">
+                                        <rect key="frame" x="120" y="169" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <state key="normal" image="LegendButton">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ICJ-Uh-3Mh" kind="push" id="IGz-L2-PZq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dtb-ex-sYw">
+                                        <rect key="frame" x="120" y="270" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <state key="normal" image="InformationButton">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4Ao-Wx-RoJ" kind="push" id="eFi-Ys-FKD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B7z-iX-Wie">
+                                        <rect key="frame" x="120" y="358" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <state key="normal" image="PartnersButton">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="rct-ZI-Wlf" kind="push" id="Zjd-WS-HKa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -42,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1983" y="-2079"/>
+            <point key="canvasLocation" x="-1457" y="-2079"/>
         </scene>
         <!--Legend View Controller-->
         <scene sceneID="ybQ-aB-WoS">
@@ -51,12 +97,29 @@
                     <view key="view" contentMode="scaleToFill" id="7Yr-0q-MLS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="OBe-Ne-XlU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This view will contain the Legend of the maps to keep it very simple" id="LoH-xe-PZV">
+                                        <rect key="frame" x="67" y="152" width="206" height="272"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IHq-Oy-cf5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pz-eB-Ump" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1519" y="-2079"/>
+            <point key="canvasLocation" x="-929" y="-2611"/>
         </scene>
         <!--Map Menu View Controller-->
         <scene sceneID="JzC-kU-L9a">
@@ -66,18 +129,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="emx-vv-NgO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="emx-vv-NgO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemCell" id="svo-Q0-4EX">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemCell" rowHeight="60" id="svo-Q0-4EX">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="svo-Q0-4EX" id="5ks-J7-z4c">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -87,7 +153,7 @@
                         <outlet property="tableView" destination="emx-vv-NgO" id="xeN-Dj-hjg"/>
                         <segue destination="huc-8n-xM3" kind="custom" identifier="GoToNightcapMapSegue" customClass="SWRevealViewControllerSegue" id="09l-3g-kwC"/>
                         <segue destination="3b2-MP-WUx" kind="custom" identifier="GoToGoonengerrySegue" customClass="SWRevealViewControllerSegue" id="xwX-fr-Ar5"/>
-                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="GoToFirstView" customClass="SWRevealViewControllerSegue" id="cd0-Rs-wZJ"/>
+                        <segue destination="8rD-ct-C23" kind="custom" identifier="GoToFirstView" customClass="SWRevealViewControllerSegue" id="cd0-Rs-wZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZl-vH-P2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MHz-Ap-mlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-989" y="-1003"/>
+            <point key="canvasLocation" x="-929" y="-1027"/>
         </scene>
         <!--Information View Controller-->
         <scene sceneID="Wec-PR-QPe">
@@ -145,12 +211,29 @@
                     <view key="view" contentMode="scaleToFill" id="hc2-q2-qXQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="g2f-tX-3V1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This view will have version info and an area to write feedback on the application" id="ixi-U1-Vcf">
+                                        <rect key="frame" x="64" y="114" width="207" height="251"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mSj-5G-BF1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJW-Qs-L73" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1055" y="-2079"/>
+            <point key="canvasLocation" x="-281" y="-2143"/>
         </scene>
         <!--Partners View Controller-->
         <scene sceneID="qAk-Xb-Qyv">
@@ -159,14 +242,58 @@
                     <view key="view" contentMode="scaleToFill" id="dAQ-FB-2fm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="eje-NK-ck0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRBCLogo" id="yxb-Q4-c6b">
+                                        <rect key="frame" x="100" y="206" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRRLogo" id="F3X-EV-W7E">
+                                        <rect key="frame" x="100" y="63" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JS4-HN-je2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LK3-IE-83T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-645" y="-2079"/>
+            <point key="canvasLocation" x="-719" y="-1723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oGg-v1-ny6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8rD-ct-C23" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BPc-nh-qV1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="8jS-bn-aFw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFr-wt-GtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1983" y="-2079"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="InformationButton" width="200" height="200"/>
+        <image name="LegendButton" width="120" height="120"/>
+        <image name="NRBCLogo" width="235" height="225"/>
+        <image name="NationalParksButton" width="120" height="120"/>
+        <image name="PartnersButton" width="120" height="120"/>
+        <image name="RRRLogo" width="120" height="120"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
