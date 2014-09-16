@@ -34,19 +34,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ikw-RM-jZF">
-                                        <rect key="frame" x="120" y="76" width="80" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <state key="normal" image="NationalParksButton">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nationalParksButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E5m-Bo-S8b"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sKd-xo-d82">
-                                        <rect key="frame" x="120" y="169" width="80" height="80"/>
+                                        <rect key="frame" x="207" y="200" width="93" height="90"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <state key="normal" image="LegendButton">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dtb-ex-sYw">
-                                        <rect key="frame" x="120" y="270" width="80" height="80"/>
+                                        <rect key="frame" x="101" y="325" width="119" height="100"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <state key="normal" image="InformationButton">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,7 +57,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B7z-iX-Wie">
-                                        <rect key="frame" x="120" y="358" width="80" height="80"/>
+                                        <rect key="frame" x="20" y="195" width="121" height="100"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <state key="normal" image="PartnersButton">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,8 +67,19 @@
                                             <segue destination="rct-ZI-Wlf" kind="push" id="Zjd-WS-HKa"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ikw-RM-jZF">
+                                        <rect key="frame" x="105" y="77" width="110" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <state key="normal" image="NationalParksButton">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nationalParksButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E5m-Bo-S8b"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44313725490196076" green="0.75686274509803919" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -110,7 +110,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -132,7 +132,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="emx-vv-NgO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemCell" rowHeight="60" id="svo-Q0-4EX">
@@ -142,7 +142,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
@@ -224,7 +224,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -256,7 +256,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.3921568627" green="0.67843137249999996" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -287,11 +287,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="InformationButton" width="200" height="200"/>
-        <image name="LegendButton" width="120" height="120"/>
+        <image name="InformationButton" width="125" height="125"/>
+        <image name="LegendButton" width="125" height="125"/>
         <image name="NRBCLogo" width="235" height="225"/>
-        <image name="NationalParksButton" width="120" height="120"/>
-        <image name="PartnersButton" width="120" height="120"/>
+        <image name="NationalParksButton" width="125" height="125"/>
+        <image name="PartnersButton" width="125" height="125"/>
         <image name="RRRLogo" width="120" height="120"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

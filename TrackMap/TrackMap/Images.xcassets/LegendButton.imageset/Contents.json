@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "legendsmall.png"
+      "filename" : "LegendIcon.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "LegendIcon@2x.png"
     }
   ],
   "info" : {
