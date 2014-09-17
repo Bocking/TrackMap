@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface InformationViewController : UIViewController
+@interface InformationViewController : UIViewController<MFMailComposeViewControllerDelegate>
+
+@property (nonatomic, strong) MFMailComposeViewController * myMail;
+
+- (IBAction)sendFeedback:(id)sender;
+
+
 
 @end
