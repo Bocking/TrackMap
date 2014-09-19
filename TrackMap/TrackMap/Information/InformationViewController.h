@@ -15,6 +15,7 @@
 
 - (IBAction)sendFeedback:(id)sender;
 
+- (IBAction)sendNationalParkFeedback:(id)sender;
 
 
 @end
