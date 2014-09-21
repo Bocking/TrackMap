@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <ArcGIS/ArcGIS.h>
 
-@interface NightcapViewController : UIViewController<AGSWebMapDelegate>
+
+@interface NightcapViewController : UIViewController<AGSWebMapDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) IBOutlet AGSMapView *nightcapMapView;
 

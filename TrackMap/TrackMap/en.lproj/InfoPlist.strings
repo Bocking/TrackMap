@@ -1,2 +1,3 @@
 /* Localized versions of Info.plist keys */
 
+NSLocationWhenInUseUsageDescription = "Will use GPS when map is being used";

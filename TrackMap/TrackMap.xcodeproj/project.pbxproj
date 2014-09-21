@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1320A77519CD0F34007ED45A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1320A77419CD0F34007ED45A /* CoreLocation.framework */; };
+		1336599719CEDFD4001D69C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1399CC6F19C12910006539F7 /* InfoPlist.strings */; };
 		1399CC6719C12910006539F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1399CC6619C12910006539F7 /* Foundation.framework */; };
 		1399CC6919C12910006539F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1399CC6819C12910006539F7 /* CoreGraphics.framework */; };
 		1399CC6B19C12910006539F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1399CC6A19C12910006539F7 /* UIKit.framework */; };
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1320A77419CD0F34007ED45A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1399CC6319C12910006539F7 /* TrackMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1399CC6619C12910006539F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1399CC6819C12910006539F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1320A77519CD0F34007ED45A /* CoreLocation.framework in Frameworks */,
 				13FA142C19C91AAC00E6CDAD /* MessageUI.framework in Frameworks */,
 				1399CC6919C12910006539F7 /* CoreGraphics.framework in Frameworks */,
 				1399CC6B19C12910006539F7 /* UIKit.framework in Frameworks */,
@@ -137,6 +141,7 @@
 		1399CC6519C12910006539F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1320A77419CD0F34007ED45A /* CoreLocation.framework */,
 				13FA142B19C91AAC00E6CDAD /* MessageUI.framework */,
 				1399CC6619C12910006539F7 /* Foundation.framework */,
 				1399CC6819C12910006539F7 /* CoreGraphics.framework */,
@@ -369,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1399CC9019C12910006539F7 /* InfoPlist.strings in Resources */,
+				1336599719CEDFD4001D69C9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
