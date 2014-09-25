@@ -33,12 +33,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
 
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-   
-    
     
 #pragma mark add web map
     // this adds webmap
@@ -58,7 +54,6 @@
         NSLog(@"Error using client ID : %@",[error localizedDescription]);
     }
    
-    
     // allows GPS to be called in IOS8
     self.locationManager = [[CLLocationManager alloc]init];
     
@@ -101,7 +96,5 @@
      self.mapView.locationDisplay.navigationPointHeightFactor  = 0.5; //50% along the center line from the bottom edge to the top edge */
     
 }
-
-
 
 @end

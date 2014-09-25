@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ArcGIS/ArcGIS.h>
 
-@interface GoonengerryViewController : UIViewController
+@interface GoonengerryViewController : UIViewController<AGSWebMapDelegate, CLLocationManagerDelegate>
+
+@property (strong, nonatomic) IBOutlet AGSMapView *goonengerryMapView;
+
+@property (retain, nonatomic) AGSWebMap *webmap;
 
 @end

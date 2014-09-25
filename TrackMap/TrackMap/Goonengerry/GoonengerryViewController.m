@@ -9,8 +9,11 @@
 #import "GoonengerryViewController.h"
 #import "SWRevealViewController.h"
 
+@import CoreLocation;
 
-@interface GoonengerryViewController ()
+@interface GoonengerryViewController () <CLLocationManagerDelegate>
+
+@property (strong,nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -31,6 +34,41 @@
     // Do any additional setup after loading the view.
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    
+#pragma mark add web map
+    // this adds webmap
+    self.webmap = [[AGSWebMap alloc] initWithItemId:@"b18911de8bf04fe8a3148d06e4c4397a" credential:nil];
+    self.webmap.delegate = self;
+    
+#pragma mark client ID
+    // Set the client ID
+    NSError *error;
+    NSString* clientID = @"qJYZkX8iPC0lLMBh";
+    
+    [AGSRuntimeEnvironment setClientID:clientID error:&error];
+    if(error)
+        
+    {
+        // We had a problem using our client ID
+        NSLog(@"Error using client ID : %@",[error localizedDescription]);
+    }
+    
+    // allows GPS to be called in IOS8
+    self.locationManager = [[CLLocationManager alloc]init];
+    
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)])
+    {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    [self.locationManager startUpdatingLocation];
+    
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"%@", [locations lastObject]);
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,15 +77,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)webMapDidLoad:(AGSWebMap *)webmap
+
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    //open webmap in mapview
+    [self.webmap openIntoMapView:self.goonengerryMapView];
+    
+    //GPS
+    
+    [self.goonengerryMapView.locationDisplay startDataSource];
+    
+    _goonengerryMapView.locationDisplay.autoPanMode = AGSLocationDisplayAutoPanModeNavigation;
+    
+    
+    /* self.mapView.locationDisplay.autoPanMode = AGSLocationDisplayAutoPanModeCompassNavigation ;
+     
+     self.mapView.locationDisplay.navigationPointHeightFactor  = 0.5; //50% along the center line from the bottom edge to the top edge */
+    
 }
-*/
 
 @end
