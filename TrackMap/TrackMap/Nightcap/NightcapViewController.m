@@ -38,13 +38,13 @@
     
 #pragma mark add web map
     // this adds webmap
-    self.webmap = [[AGSWebMap alloc] initWithItemId:@"723060582241474981f0a77a143f1cbe" credential:nil];
+    self.webmap = [[AGSWebMap alloc] initWithItemId:@"fe611e65e34d4e8f85a2768262a41a9c" credential:nil];
     self.webmap.delegate = self;
     
 #pragma mark client ID
     // Set the client ID
     NSError *error;
-    NSString* clientID = @"0t1wjgzTOV7zMCGS";
+    NSString* clientID = @"qJYZkX8iPC0lLMBh";
     
 [AGSRuntimeEnvironment setClientID:clientID error:&error];
     if(error)
