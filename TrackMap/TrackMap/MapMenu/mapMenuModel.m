@@ -33,6 +33,10 @@
     item2.screenType = ScreenTypeGoonengerry;
     [menuItemArray addObject:item2];
     
+    mapMenuItem *item3 = [[mapMenuItem alloc] init];
+    item3.menuTitle = @"Bungawalbin Group";
+    item3.screenType = ScreenTypeBungawalbin;
+    [menuItemArray addObject:item3];
     
     
     return menuItemArray;

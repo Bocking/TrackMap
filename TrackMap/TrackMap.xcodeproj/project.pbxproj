@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1320A77519CD0F34007ED45A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1320A77419CD0F34007ED45A /* CoreLocation.framework */; };
+		1329E9FF19D791320006908B /* BungawalbinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1329E9FE19D791320006908B /* BungawalbinViewController.m */; };
 		1336599719CEDFD4001D69C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1399CC6F19C12910006539F7 /* InfoPlist.strings */; };
 		1399CC6719C12910006539F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1399CC6619C12910006539F7 /* Foundation.framework */; };
 		1399CC6919C12910006539F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1399CC6819C12910006539F7 /* CoreGraphics.framework */; };
@@ -49,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		1320A77419CD0F34007ED45A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1329E9FD19D790FA0006908B /* BungawalbinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BungawalbinViewController.h; path = Bungawalbin/BungawalbinViewController.h; sourceTree = "<group>"; };
+		1329E9FE19D791320006908B /* BungawalbinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BungawalbinViewController.m; path = Bungawalbin/BungawalbinViewController.m; sourceTree = "<group>"; };
 		1399CC6319C12910006539F7 /* TrackMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1399CC6619C12910006539F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1399CC6819C12910006539F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1329E9FC19D7905F0006908B /* Bungawalbin GOR */ = {
+			isa = PBXGroup;
+			children = (
+				1329E9FD19D790FA0006908B /* BungawalbinViewController.h */,
+				1329E9FE19D791320006908B /* BungawalbinViewController.m */,
+			);
+			name = "Bungawalbin GOR";
+			sourceTree = "<group>";
+		};
 		1399CC5A19C12910006539F7 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +283,7 @@
 		1399CCBA19C1359F006539F7 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				1329E9FC19D7905F0006908B /* Bungawalbin GOR */,
 				1399CCC419C1666D006539F7 /* Goonengerry National Park Map */,
 				1399CC9C19C12C33006539F7 /* Nightcapmap */,
 			);
@@ -396,6 +409,7 @@
 				1399CCBD19C1457B006539F7 /* SWRevealViewController.m in Sources */,
 				1399CCAE19C1308F006539F7 /* partnersViewController.m in Sources */,
 				1399CCA719C12FA8006539F7 /* firstViewModel.m in Sources */,
+				1329E9FF19D791320006908B /* BungawalbinViewController.m in Sources */,
 				1399CCC019C14C42006539F7 /* mapMenuModel.m in Sources */,
 				1399CCC719C16706006539F7 /* GoonengerryViewController.m in Sources */,
 			);

@@ -14,6 +14,25 @@
 
 @implementation partnersViewController
 
+-(IBAction)RRRlink
+{
+   [[UIApplication sharedApplication]
+    openURL:[NSURL URLWithString:@"http://www.facebook.com/RichmondRiverRiders"]];
+}
+
+-(IBAction)NRBClink
+{
+    [[UIApplication sharedApplication]
+     openURL:[NSURL URLWithString:@"http://www.northernriversbushwalkersclub.org.au"]];
+}
+
+-(IBAction)NRTPlink
+{
+    [[UIApplication sharedApplication]
+     openURL:[NSURL URLWithString:@"https://www.facebook.com/pages/Northern-Rivers-Team-Penners/117524518330527"]];
+}
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

@@ -18,7 +18,7 @@
 enum ScreenType {
     ScreenTypeNightcap,
     ScreenTypeGoonengerry,
-    ScreenTypeHome
-    
+    ScreenTypeHome,
+    ScreenTypeBungawalbin
     
 };

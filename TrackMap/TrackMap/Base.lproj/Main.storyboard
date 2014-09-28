@@ -216,6 +216,7 @@
                         <segue destination="huc-8n-xM3" kind="custom" identifier="GoToNightcapMapSegue" customClass="SWRevealViewControllerSegue" id="09l-3g-kwC"/>
                         <segue destination="3b2-MP-WUx" kind="custom" identifier="GoToGoonengerrySegue" customClass="SWRevealViewControllerSegue" id="xwX-fr-Ar5"/>
                         <segue destination="8rD-ct-C23" kind="custom" identifier="GoToFirstView" customClass="SWRevealViewControllerSegue" id="cd0-Rs-wZJ"/>
+                        <segue destination="SUs-Cw-VHW" kind="custom" identifier="GoToBungawalbinSegue" customClass="SWRevealViewControllerSegue" id="HsM-JR-AE9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZl-vH-P2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,18 +370,51 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRBCLogo" id="yxb-Q4-c6b">
-                                        <rect key="frame" x="106" y="226" width="120" height="120"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRRLogo" id="Sj0-fS-pnQ">
+                                        <rect key="frame" x="100" y="92" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRRLogo" id="F3X-EV-W7E">
-                                        <rect key="frame" x="106" y="87" width="120" height="120"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DRP-jv-hm0" userLabel="RRRlogoButton">
+                                        <rect key="frame" x="100" y="92" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <inset key="insetFor6xAndEarlier" minX="-100" minY="-94" maxX="220" maxY="214"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RRRlink" destination="rct-ZI-Wlf" eventType="touchUpInside" id="PTe-o5-D8d"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRBCLogo" id="J3A-vG-dZ6">
+                                        <rect key="frame" x="100" y="220" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRTPLogo" id="LgL-Tp-Szs">
-                                        <rect key="frame" x="51" y="379" width="230" height="76"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRTPLogo" id="2pa-Bc-iQF">
+                                        <rect key="frame" x="26" y="380" width="286" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5FH-Td-BWm" userLabel="NRTPlogoButton">
+                                        <rect key="frame" x="26" y="380" width="286" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <inset key="insetFor6xAndEarlier" minX="-17" minY="-401" maxX="303" maxY="472"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="NRTPlink" destination="rct-ZI-Wlf" eventType="touchUpInside" id="oYs-mW-ds2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5yw-EK-MUf" userLabel="NRBClogoButton">
+                                        <rect key="frame" x="100" y="230" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <inset key="insetFor6xAndEarlier" minX="-100" minY="-273" maxX="220" maxY="393"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="NRBClink" destination="rct-ZI-Wlf" eventType="touchUpInside" id="pBV-A9-d40"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -392,6 +426,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LK3-IE-83T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-775" y="-3291"/>
+        </scene>
+        <!--Bungawalbin View Controller-->
+        <scene sceneID="sze-WT-sGg">
+            <objects>
+                <viewController id="SUs-Cw-VHW" customClass="BungawalbinViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKI-Gp-qQU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="tIf-F5-TrS" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bungawalbinMapView" destination="tIf-F5-TrS" id="yLB-bA-HBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bD-GL-4Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2274" y="-2163"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oGg-v1-ny6">

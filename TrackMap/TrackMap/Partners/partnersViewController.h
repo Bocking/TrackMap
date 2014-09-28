@@ -10,4 +10,11 @@
 
 @interface partnersViewController : UIViewController
 
+
+-(IBAction)RRRlink;
+
+-(IBAction)NRBClink;
+
+-(IBAction)NRTPlink;
+
 @end

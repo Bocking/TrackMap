@@ -98,7 +98,11 @@
             //go back to first screen
             [self performSegueWithIdentifier:@"GoToFirstView" sender:self];
             break;
-            
+        
+        case ScreenTypeBungawalbin:
+            //go back to first screen
+            [self performSegueWithIdentifier:@"GoToBungawalbinSegue" sender:self];
+            break;
                             
         default:
             break;

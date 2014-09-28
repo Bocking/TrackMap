@@ -114,7 +114,7 @@
          */
         
         //Add some text to the message body
-        NSString * sentFrom = @"Please specify what Natioal park you are in and your location. Thank you!";
+        NSString * sentFrom = @"Please specify what National park you are in and your location. Thank you!";
         [myMail setMessageBody:sentFrom isHTML:YES];
         
         //display the view controller
