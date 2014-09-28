@@ -24,7 +24,7 @@
     [menuItemArray addObject:item0];
     
     mapMenuItem *item1 = [[mapMenuItem alloc] init];
-    item1.menuTitle = @"Nightcap Conservation Area";
+    item1.menuTitle = @"Nightcap NP/Whian Whain SCA";
     item1.screenType = ScreenTypeNightcap;
     [menuItemArray addObject:item1];
     

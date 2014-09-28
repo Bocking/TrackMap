@@ -100,7 +100,7 @@
         [myMail setSubject:@"National Park feedback"];
         
         //To Recipients
-        NSArray * toRecipients = [[NSArray alloc] initWithObjects:@"douglas.Bocking@gmail.com", nil];
+        NSArray * toRecipients = [[NSArray alloc] initWithObjects:@"andrew.fay@environment.nsw.gov.au", nil];
         [myMail setToRecipients:toRecipients];
         
         /*

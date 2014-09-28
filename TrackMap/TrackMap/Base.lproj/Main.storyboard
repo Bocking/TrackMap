@@ -102,13 +102,75 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This view will contain the Legend of the maps to keep it very simple" id="LoH-xe-PZV">
-                                        <rect key="frame" x="67" y="152" width="206" height="272"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <view contentMode="scaleToFill" id="kZy-ow-tfA">
+                                        <rect key="frame" x="50" y="117" width="80" height="15"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" red="1" green="0.060419809951900216" blue="0.10728047874650481" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="olF-rx-uwu">
+                                        <rect key="frame" x="50" y="182" width="80" height="15"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" red="0.35231063629113168" green="1" blue="0.32369723666418393" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="ijO-6o-fMM">
+                                        <rect key="frame" x="50" y="247" width="80" height="15"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" red="0.62764602712907414" green="0.44164672800270421" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiuse - Walking, Horse and Mountian Bike riding permitted." lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3kD-vS-RIj">
+                                        <rect key="frame" x="138" y="92" width="167" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking Only" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WZc-cP-Vw9">
+                                        <rect key="frame" x="138" y="179" width="108" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Road" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ZQ-gF-djS">
+                                        <rect key="frame" x="138" y="244" width="104" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camping ground" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TkM-fI-AKS">
+                                        <rect key="frame" x="138" y="354" width="130" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.9998604910714286" green="0.9998604910714286" blue="0.9998604910714286" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest Area" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nBf-1a-HeY">
+                                        <rect key="frame" x="138" y="420" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99936224489795922" green="0.99936224489795922" blue="0.99936224489795922" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrackHeadicon" highlightedImage="TrackHeadicon" id="neR-MI-ck0">
+                                        <rect key="frame" x="79" y="292" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Campingicon" id="hst-5b-sML">
+                                        <rect key="frame" x="79" y="340" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RestAreaIcon" id="dCM-eo-1KJ">
+                                        <rect key="frame" x="79" y="411" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trail Heads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cdm-20-92J">
+                                        <rect key="frame" x="138" y="301" width="89" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -273,14 +335,15 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ewk-UE-ofo">
                                 <rect key="frame" x="58" y="97" width="235" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Disclaimer: The developers of TrackMap have made every effort to insure every map is free of errors, but do not warrant the maps or its' features are spatially or temporally accurate or fit for a particular use.</string>
+                                <string key="text">Disclaimer: The developers of TrackMap have made every effort to ensure every map is free of errors, but do not warrant the maps or its' features are spatially or temporally accurate or fit for a particular use.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special thanks to Andrew Fay and Tim Perry for all their hard work to make the TrackMap Application possible." lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SBt-xi-lS0">
-                                <rect key="frame" x="58" y="296" width="205" height="119"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SBt-xi-lS0">
+                                <rect key="frame" x="58" y="278" width="223" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Created by Douglas Bocking. Special thanks to Andrew Fay and Tim Perry for all their hard work to make the TrackMap Application possible.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -307,12 +370,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRBCLogo" id="yxb-Q4-c6b">
-                                        <rect key="frame" x="100" y="206" width="120" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <rect key="frame" x="106" y="226" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRRLogo" id="F3X-EV-W7E">
-                                        <rect key="frame" x="100" y="63" width="120" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="106" y="87" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRTPLogo" id="LgL-Tp-Szs">
+                                        <rect key="frame" x="51" y="379" width="230" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4431372549" green="0.75686274509999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -346,14 +413,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Campingicon" width="32" height="32"/>
         <image name="FeedbackButton" width="125" height="125"/>
         <image name="InformationButton" width="125" height="125"/>
         <image name="LegendButton" width="125" height="125"/>
         <image name="NRBCLogo" width="235" height="225"/>
+        <image name="NRTPLogo" width="323" height="84"/>
         <image name="NationalParkFeedbackButton" width="200" height="200"/>
         <image name="NationalParksButton" width="125" height="125"/>
         <image name="PartnersButton" width="125" height="125"/>
         <image name="RRRLogo" width="120" height="120"/>
+        <image name="RestAreaIcon" width="32" height="32"/>
+        <image name="TrackHeadicon" width="32" height="32"/>
         <image name="initialfeedbackbutton" width="125" height="125"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
