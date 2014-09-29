@@ -17,7 +17,7 @@
 -(IBAction)RRRlink
 {
    [[UIApplication sharedApplication]
-    openURL:[NSURL URLWithString:@"http://www.facebook.com/RichmondRiverRiders"]];
+    openURL:[NSURL URLWithString:@"https://m.facebook.com/RichmondRiverRiders?refsrc"]];
 }
 
 -(IBAction)NRBClink
@@ -29,7 +29,7 @@
 -(IBAction)NRTPlink
 {
     [[UIApplication sharedApplication]
-     openURL:[NSURL URLWithString:@"https://www.facebook.com/pages/Northern-Rivers-Team-Penners/117524518330527"]];
+     openURL:[NSURL URLWithString:@"https://m.facebook.com/profile.php?id=117524518330527"]];
 }
 
 

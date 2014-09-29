@@ -371,11 +371,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRRLogo" id="Sj0-fS-pnQ">
-                                        <rect key="frame" x="100" y="92" width="120" height="120"/>
+                                        <rect key="frame" x="100" y="68" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DRP-jv-hm0" userLabel="RRRlogoButton">
-                                        <rect key="frame" x="100" y="92" width="120" height="120"/>
+                                        <rect key="frame" x="100" y="68" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <inset key="insetFor6xAndEarlier" minX="-100" minY="-94" maxX="220" maxY="214"/>
                                         <state key="normal">
@@ -386,26 +386,11 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRBCLogo" id="J3A-vG-dZ6">
-                                        <rect key="frame" x="100" y="220" width="120" height="120"/>
+                                        <rect key="frame" x="100" y="203" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRTPLogo" id="2pa-Bc-iQF">
-                                        <rect key="frame" x="26" y="380" width="286" height="71"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5FH-Td-BWm" userLabel="NRTPlogoButton">
-                                        <rect key="frame" x="26" y="380" width="286" height="71"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <inset key="insetFor6xAndEarlier" minX="-17" minY="-401" maxX="303" maxY="472"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="NRTPlink" destination="rct-ZI-Wlf" eventType="touchUpInside" id="oYs-mW-ds2"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5yw-EK-MUf" userLabel="NRBClogoButton">
-                                        <rect key="frame" x="100" y="230" width="120" height="120"/>
+                                        <rect key="frame" x="100" y="203" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <inset key="insetFor6xAndEarlier" minX="-100" minY="-273" maxX="220" maxY="393"/>
                                         <state key="normal">
@@ -413,6 +398,21 @@
                                         </state>
                                         <connections>
                                             <action selector="NRBClink" destination="rct-ZI-Wlf" eventType="touchUpInside" id="pBV-A9-d40"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRTPLogo" id="2pa-Bc-iQF">
+                                        <rect key="frame" x="17" y="401" width="286" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5FH-Td-BWm" userLabel="NRTPlogoButton">
+                                        <rect key="frame" x="17" y="401" width="286" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <inset key="insetFor6xAndEarlier" minX="-17" minY="-401" maxX="303" maxY="472"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="NRTPlink" destination="rct-ZI-Wlf" eventType="touchUpInside" id="oYs-mW-ds2"/>
                                         </connections>
                                     </button>
                                 </subviews>
