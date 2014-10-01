@@ -55,7 +55,7 @@
         [myMail setSubject:@"TrackMap feedback"];
         
         //To Recipients
-        NSArray * toRecipients = [[NSArray alloc] initWithObjects:@"douglas.Bocking@gmail.com", nil];
+        NSArray * toRecipients = [[NSArray alloc] initWithObjects:@"trackmap101@gmail.com", nil];
         [myMail setToRecipients:toRecipients];
         
         /*
@@ -100,7 +100,7 @@
         [myMail setSubject:@"National Park feedback"];
         
         //To Recipients
-        NSArray * toRecipients = [[NSArray alloc] initWithObjects:@"andrew.fay@environment.nsw.gov.au", nil];
+        NSArray * toRecipients = [[NSArray alloc] initWithObjects:@"trackmap101@gmail.com", nil];
         [myMail setToRecipients:toRecipients];
         
         /*
@@ -142,7 +142,7 @@
             //Do Something
         case MFMailComposeResultSent:
         {
-            UIAlertView * thankyouAlert = [[UIAlertView alloc]initWithTitle:@"Thank You" message:@"Thankyou for your feedback" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView * thankyouAlert = [[UIAlertView alloc]initWithTitle:@"Thank You" message:@"Thank you for your feedback" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             
             [thankyouAlert show];
         }
