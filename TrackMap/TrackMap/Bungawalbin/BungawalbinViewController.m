@@ -35,7 +35,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
 #pragma mark add web map
     // this adds webmap
@@ -96,6 +96,10 @@
      
      self.mapView.locationDisplay.navigationPointHeightFactor  = 0.5; //50% along the center line from the bottom edge to the top edge */
     
+}
+- (IBAction)bungawalbinButtonPressed:(id)sender
+{
+        [self.revealViewController revealToggleAnimated:YES];
 }
 
 @end

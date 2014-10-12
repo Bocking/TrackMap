@@ -33,7 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     
 #pragma mark add web map
@@ -95,6 +95,10 @@
      
      self.mapView.locationDisplay.navigationPointHeightFactor  = 0.5; //50% along the center line from the bottom edge to the top edge */
     
+}
+- (IBAction)goonengerryMenuButtonPressed:(id)sender
+{
+        [self.revealViewController revealToggleAnimated:YES];
 }
 
 @end

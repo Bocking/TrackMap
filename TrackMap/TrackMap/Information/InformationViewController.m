@@ -69,7 +69,7 @@
          */
         
         //Add some text to the message body
-        NSString * sentFrom = @"Email sent from track map";
+        NSString * sentFrom = @"Please provide feedback on the Trackmap - NSW application here! Thank you!";
         [myMail setMessageBody:sentFrom isHTML:YES];
         
         //display the view controller
@@ -114,7 +114,7 @@
          */
         
         //Add some text to the message body
-        NSString * sentFrom = @"Please specify what National park you are in and your location. Thank you!";
+        NSString * sentFrom = @"Please specify the National Park and your location. Thank you!";
         [myMail setMessageBody:sentFrom isHTML:YES];
         
         //display the view controller
